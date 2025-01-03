@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "나무위키 텍스트 가독성 향상",
+  "version": "1.0",
+  "description": "나무위키의 텍스트 가독성을 향상시키는 확장 프로그램",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.namu.wiki/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.namu.wiki/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+} 

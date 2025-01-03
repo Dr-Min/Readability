@@ -1,0 +1,9 @@
+/* 변환된 텍스트 요소에 대한 기본 스타일 */
+p, article, div > text {
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: pre-line;
+    padding: 10px;
+    color: #333;
+} 
